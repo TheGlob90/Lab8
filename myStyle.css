@@ -1,0 +1,30 @@
+p
+{
+  color: black;
+  font-family: arial;
+  font-size: 11pt;
+}
+
+p.title
+{
+  color: black;
+  font-size: 20pt;
+}
+
+body
+{
+  background-image: url(https://media3.giphy.com/media/TcdpZwYDPlWXC/200.gif);
+  background-size: 100%;
+}
+
+a
+{
+  background-color: blue;
+  color: red;
+}
+
+a:hover
+{
+  background-color: red;
+  color: blue;
+}
