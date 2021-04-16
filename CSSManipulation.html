@@ -1,0 +1,35 @@
+<html>
+<title>CSS Manipulation</title>
+<body>
+    <script>
+        function change()
+        {
+            var paragraph = document.getElementById("parag");
+
+            var bor = document.getElementById("redBorder").value;
+            var bog = document.getElementById("greenBorder").value;
+            var bob = document.getElementById("blueBorder").value;
+            var bow = document.getElementById("widthBorder").value;
+            var bar = document.getElementById("redBackground").value;
+            var bag = document.getElementById("greenBackground").value;
+            var bab = document.getElementById("blueBackground").value;
+            var baw = document.getElementById("widthBackground").value;
+
+            paragraph.style.backgroundColor = "rgb(" + bar + "," + bag + "," + bab + ")";
+            paragraph.style.borderColor = "rgb(" + bor + "," + bog + "," + bob + ")";
+            paragraph.style.borderWidth = bow;
+
+        }
+    </script>
+    <p id = "parag" style="background-color:red">This is the paragraph!</p>
+    <p>Border red (0-255): <input type="text" id="redBorder"><br></p>
+    <p>Border green(0-255): <input type="text" id="greenBorder"><br></p>
+    <p>Border blue(0-255): <input type="text" id="blueBorder"><br></p>
+    <p>Border width: <input type="text" id="widthBorder"><br></p>
+    <p>Background red(0-255): <input type="text" id="redBackground"><br></p>
+    <p>Background green(0-255): <input type="text" id="greenBackground"><br></p>
+    <p>Background blue(0-255): <input type="text" id="blueBackground"><br></p>
+    <p>Background width: <input type="text" id="widthBackground"><br></p>
+    <button onclick = "change()">Change</button>
+</body>
+</html>
